@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="apple_style.css">
+
+    <style>
+        /* responsive css */
+        @media(max-width:576px) {
+            .carousel-caption {
+                bottom: 60%;
+            }
+
+            .carousel-caption h5 {
+                font-size: 20px;
+            }
+
+            .carousel-caption a {
+                font-size: 15px;
+                padding: 10px 15px;
+            }
+
+            .carousel-caption p {
+                width: 100%;
+                line-height: 2.5rem;
+                font-size: 15px;
+            }
+
+            swiper-slide {
+                width: 100%;
+            }
+        }
+
+        @media(max-width:728px) {
+            .hero-img img {
+                width: 20rem;
+                height: 14rem;
+            }
+
+            .carousel-caption h5 {
+                font-size: 35px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-top: 15px;
+            }
+
+            .carousel-caption p {
+                width: 60%;
+                margin: auto;
+                font-size: 12px;
+                line-height: 1.9;
+            }
+    </style>
+    <title>Apple (Indonesia)</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top d-flex flex-column">
+        <div class="container">
+            <a href="#" class="navbar-brand brand-1"><img src="apple_img/logo-apple-white.png" alt="" width="30px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcon"
+                aria-controls="navcon" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse mx-2" id="navcon">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-1" id="mac-head">
+                        <a href="#mac" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="mac">Mac</a>
+                    </li>
+                    <li class="nav-item mx-1" id="ipad-head">
+                        <a href="#ipad" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="ipad">iPad</a>
+                    </li>
+                    <li class="nav-item mx-1" id="iphone-head">
+                        <a href="#iphone" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="iphone">iPhone</a>
+                    </li>
+                    <li class="nav-item mx-1" id="watch-head">
+                        <a href="#watch" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="watch">Watch</a>
+                    </li>
+                    <li class="nav-item mx-2" id="airpods-head">
+                        <a href="#airpods" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="airpods">AirPods</a>
+                    </li>
+                    <li class="nav-item mx-1" id="tvr-head">
+                        <a href="#tvr" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="tvr">TV & Rumah</a>
+                    </li>
+                    <li class="nav-item mx-1" id="hiburan-head">
+                        <a href="#hiburan" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="hiburan">Hiburan</a>
+                    </li>
+                    <li class="nav-item mx-1" id="dukungan-head">
+                        <a href="#dukungan" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="dukungan">Dukungan</a>
+                    </li>
+                    <li class="nav-item mx-1" id="toko-head">
+                        <a href="#toko" class="nav-link collapsed" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="toko">Tempat Membeli</a>
+                    </li>
+                </ul>
+                <a href="#search" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="search"><i class="bi bi-search"></i></a>
+            </div>
+        </div>
+
+        <!-- Mac Collapse -->
+        <div class="collapse pt-10" id="mac" aria-labelledby="mac-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi Mac</p>
+                    <a href="#">
+                        <h4>MacBook Air</h4>
+                    </a>
+                    <a href="#">
+                        <h4>MacBook Pro</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iMac</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Mac mini</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Mac Studio</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Layar</h4>
+                    </a>
+                    <a href="#">
+                        <p>Bandingkan Mac</p>
+                    </a>
+                    <a href="#">
+                        <p>Mac Bisa Melakukannya</p>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Semua Model Mac</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Lainnya dari Mac</p>
+                    <a href="#">
+                        <p>Dukungan Mac</p>
+                    </a>
+                    <a href="#">
+                        <p>macOS Ventura</p>
+                    </a>
+                    <a href="#">
+                        <p>Kontinuitas</p>
+                    </a>
+                    <a href="#">
+                        <p>iCloud</p>
+                    </a>
+                    <a href="#">
+                        <p>Mac untuk Bisnis</p>
+                    </a>
+                    <a href="#">
+                        <p>Pendidikan</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPad Collapse -->
+        <div class="collapse pt-10" id="ipad" aria-labelledby="ipad-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi iPad</p>
+                    <a href="#">
+                        <h4>iPad Pro</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPad Air</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPad</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPad mini</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Pencil</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Papan Ketik</h4>
+                    </a>
+                    <a href="#">
+                        <p>Bandingkan iPad</p>
+                    </a>
+                    <a href="#">
+                        <p>Mengapa iPad</p>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Semua Model iPad</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Lainnya dari iPad</p>
+                    <a href="#">
+                        <p>Dukungan iPad</p>
+                    </a>
+                    <a href="#">
+                        <p>iPadOS 16</p>
+                    </a>
+                    <a href="#">
+                        <p>iCloud</p>
+                    </a>
+                    <a href="#">
+                        <p>Pendidikan</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPhone Collapse -->
+        <div class="collapse pt-10" id="iphone" aria-labelledby="iphone-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi iPhone</p>
+                    <a href="#">
+                        <h4>iPhone 14 Pro</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPhone 14</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPhone 13</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPhone 12</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPhone SE</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Papan Ketik</h4>
+                    </a>
+                    <a href="#">
+                        <p>Bandingkan iPhone</p>
+                    </a>
+                    <a href="#">
+                        <p>Beralih ke iPhone</p>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Semua Model iPhone</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Lainnya dari iPhone</p>
+                    <a href="#">
+                        <p>Dukungan iPhone</p>
+                    </a>
+                    <a href="#">
+                        <p>iOS 16</p>
+                    </a>
+                    <a href="#">
+                        <p>Privasi iPhone</p>
+                    </a>
+                    <a href="#">
+                        <p>iCloud</p>
+                    </a>
+                    <a href="#">
+                        <p>Dompet</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Watch Collapse -->
+        <div class="collapse pt-10" id="watch" aria-labelledby="watch-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi Watch</p>
+                    <a href="#">
+                        <h4>Apple Watch Ultra</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Watch Series 8</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Watch SE</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Watch Nike</h4>
+                    </a>
+                    <a href="#">
+                        <p>Bandingkan Apple Watch</p>
+                    </a>
+                    <a href="#">
+                        <p>Mengapa Apple Watch</p>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Semua Model Apple Watch</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Lainnya dari Watch</p>
+                    <a href="#">
+                        <p>Dukungan Apple Watch</p>
+                    </a>
+                    <a href="#">
+                        <p>watchOS 9</p>
+                    </a>
+                    <a href="#">
+                        <p>Apple Fitness+</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AirPods Collapse -->
+        <div class="collapse pt-10" id="airpods" aria-labelledby="airpods-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi AirPods</p>
+                    <a href="#">
+                        <h4>AirPods Generasi-2</h4>
+                    </a>
+                    <a href="#">
+                        <h4>AirPods Generasi-3</h4>
+                    </a>
+                    <a href="#">
+                        <h4>AirPods Pro Generasi-2</h4>
+                    </a>
+                    <a href="#">
+                        <h4>AirPods Max</h4>
+                    </a>
+                    <a href="#">
+                        <p>Bandingkan AirPods</p>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Semua Model AirPods</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Lainnya dari AirPods</p>
+                    <a href="#">
+                        <p>Dukungan AirPods</p>
+                    </a>
+                    <a href="#">
+                        <p>Apple Music</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TV & RUmah Collapse -->
+        <div class="collapse pt-10" id="tvr" aria-labelledby="tvr-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi TV & Rumah</p>
+                    <a href="#">
+                        <h4>Apple TV 4K</h4>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Semua Model TV & Rumah</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Lainnya dari TV & Rumah</p>
+                    <a href="#">
+                        <p>Dukungan Apple TV</p>
+                    </a>
+                    <a href="#">
+                        <p>Aplikasi Apple TV</p>
+                    </a>
+                    <a href="#">
+                        <p>Apple TV+</p>
+                    </a>
+                    <a href="#">
+                        <p>Apple Music</p>
+                    </a>
+                    <a href="#">
+                        <p>AirPlay</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hiburan Collapse -->
+        <div class="collapse pt-10" id="hiburan" aria-labelledby="hiburan-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi Hiburan</p>
+                    <a href="#">
+                        <h4>Apple One</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple TV+</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Arcade</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Fitness+</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Podcast</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Apple Books</h4>
+                    </a>
+                    <a href="#">
+                        <h4>App Store</h4>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Hiburan</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Dukungan</p>
+                    <a href="#">
+                        <p>Dukungan Apple TV</p>
+                    </a>
+                    <a href="#">
+                        <p>Dukungan Apple Music</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dukungan Collapse -->
+        <div class="collapse pt-10" id="dukungan" aria-labelledby="dukungan-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi Dukungan</p>
+                    <a href="#">
+                        <h4>iPhone</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Mac</h4>
+                    </a>
+                    <a href="#">
+                        <h4>iPad</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Watch</h4>
+                    </a>
+                    <a href="#">
+                        <h4>AirPods</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Musik</h4>
+                    </a>
+                    <a href="#">
+                        <h4>TV</h4>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Dukungan</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Dapatkan Bantuan</p>
+                    <a href="#">
+                        <p>Komunitas</p>
+                    </a>
+                    <a href="#">
+                        <p>Periksa Perlindungan</p>
+                    </a>
+                    <a href="#">
+                        <p>Perbaikan</p>
+                    </a>
+                    <a href="#">
+                        <p>Hubungi Kami</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Topik Berguna</p>
+                    <a href="#">
+                        <p>Daaptkan Produk AppleCare</p>
+                    </a>
+                    <a href="#">
+                        <p>Apple ID & Kata Sandi</p>
+                    </a>
+                    <a href="#">
+                        <p>Penagihan & Langganan</p>
+                    </a>
+                    <a href="#">
+                        <p>Lacak</p>
+                    </a>
+                    <a href="#">
+                        <p>Aksesibilitas</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hiburan Collapse -->
+        <div class="collapse pt-10" id="toko" aria-labelledby="toko-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <p>Jelajahi</p>
+                    <a href="#">
+                        <h4>Penjual Resmi</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Layanan & Dukungan</h4>
+                    </a>
+                    <a href="#">
+                        <p>Jelajahi Semua Cara Membeli</p>
+                    </a>
+                </div>
+                <div class="navcol">
+                    <p>Dukungan</p>
+                    <a href="#">
+                        <p>Dukungan Apple TV</p>
+                    </a>
+                    <a href="#">
+                        <p>Dukungan Apple Music</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Collapse -->
+        <div class="collapse pt-10" id="search" aria-labelledby="cari-head" data-parent="#navcon">
+            <div class="card card-body bg-dark text-white">
+                <div class="navcol">
+                    <input type="search">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product  -->
+    <div class="carousel carousel-fade slide" id="newpro" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#newpro" data-bs-slide-to="0" aria-current="true"
+                aria-label="Slide Two">
+            </button>
+            <button class="active" type="button" data-bs-target="#newpro" data-bs-slide-to="1" aria-current="true"
+                aria-label="Slide Two">
+            </button>
+            <button class="active" type="button" data-bs-target="#newpro" data-bs-slide-to="2" aria-current="true"
+                aria-label="Slide Two">
+            </button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="apple_img/iphone-pro1-bg.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-md-block">
+                    <h5>iPhone 14 Pro</h5>
+                    <p>Semakin Pro</p>
+                    <p><a href="#" class="watch_more add link-primary">Selengkapnya &gt;</a> <a href="#"
+                            class="watch_buy add">Beli &gt;</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="apple_img/iphone-pro2-bg.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-md-block">
+                    <h5>iPhone 14 Pro</h5>
+                    <p>Semakin Pro</p>
+                    <p><a href="#" class="watch_more add link-primary">Selengkapnya &gt;</a> <a href="#"
+                            class="watch_buy add">Beli &gt;</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="apple_img/iphone-pro3-bg.png" alt="" class="d-block w-100">
+                <div class="carousel-caption d-md-block">
+                    <h5>iPhone 14 Pro</h5>
+                    <p>Semakin Pro</p>
+                    <p><a href="#" class="watch_more add link-primary">Selengkapnya &gt;</a> <a href="#"
+                            class="watch_buy add">Beli &gt;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="hero" class="main-section-padding">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div>
+                <div class="hero-text my-5">
+                    <h3>Apple Watch</h3>
+                    <h4>Series 8</h4>
+                    <p class="hero-text">Lompatan besar untuk kesehatan Anda</p>
+                    <p><a href="#" class="add link-primary ">Selengkapnya &gt;</a> <a href="#" class="add">Beli
+                            &gt;</a>
+                    </p>
+                </div>
+                <div class="hero-img">
+                    <img src="apple_img/watch8.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-sm-6">
+                <div class="p-3 border box">
+                    <div class="hero-text my-5">
+                        <h2>iPad Pro</h2>
+                        <p class="hero-text">Bertenaga super berkat <br> Chip M2</p>
+                        <p><a href="#" class="add link-primary">Selengkapnya &gt;</a> <a href="#" class="add">Beli
+                                &gt;</a>
+                        </p>
+                    </div>
+                    <div class="hero-img">
+                        <img src="apple_img/ipadpro.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="p-3 border box">
+                    <div class="hero-text my-5">
+                        <h2>MacBook Pro</h2>
+                        <p class="hero-text">Bertenaga super berkat <br>M2 Pro dan M2 Max</p>
+                        <p><a href="#" class="add link-primary">Selengkapnya &gt;</a> <a href="#" class="add">Beli
+                                &gt;</a>
+                        </p>
+                    </div>
+                    <div class="hero-img">
+                        <img src="apple_img/macbookpro.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="p-3 border box" style="background-color: #efefef; color: black;">
+                    <div class="hero-text my-5">
+                        <h2>Mac bisa <span class="bg-success">Melakukannya</span></h2>
+                        <p class="hero-text">Temukan apa yang bisa Mac <br>lakukan untuk Anda</p>
+                        <p><a href="#" class="add link-primary">Selengkapnya &gt;</a> <a href="#" class="add">Beli
+                                &gt;</a>
+                        </p>
+                    </div>
+                    <div class="hero-img">
+                        <img src="apple_img/macos-app.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="p-3 border box" style="background-color: #efefef; color: black;">
+                    <div class="hero-text my-5">
+                        <h2>iPad</h2>
+                        <p class="hero-text">Disukai semua. Siap berkarya. <br>Luar biasa</p>
+                        <p><a href="#" class="add link-primary">Selengkapnya &gt;</a> <a href="#" class="add">Beli
+                                &gt;</a>
+                        </p>
+                    </div>
+                    <div class="hero-img">
+                        <img src="apple_img/iPad.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="p-3 border box">
+                    <div class="hero-text my-5">
+                        <h2>Mac Mini</h2>
+                        <p class="hero-text">Bertenaga super berkat M2 dan M2 Pro</p>
+                        <p><a href="#" class="add link-primary">Selengkapnya &gt;</a> <a href="#" class="add">Beli
+                                &gt;</a>
+                        </p>
+                    </div>
+                    <div class="hero-img">
+                        <img src="apple_img/macmini.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="p-3 border box">
+                    <div class="hero-text my-5">
+                        <h2>AirPods Pro</h2>
+                        <p class="hero-text">Dibuat ulang dengan kemampuan baru</p>
+                        <p><a href="#" class="add link-primary">Selengkapnya &gt;</a> <a href="#" class="add">Beli
+                                &gt;</a>
+                        </p>
+                    </div>
+                    <div class="hero-img">
+                        <img src="apple_img/airpodspro.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+        slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <swiper-slide>
+            <img src="apple_img/Ted-Lasso.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+            <img src="apple_img/peaky-blindersjpg.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+            <img src="apple_img/echo3.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+            <img src="apple_img/black-bird.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+            <img src="apple_img/Liaison.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+            <img src="apple_img/mr-robot.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+            <img src="apple_img/prehistoric-planet.jpg" />
+        </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <!-- Footer -->
+    <div class="container-fluid footer p-2">
+        <div class="row">
+            <div class="col-sm-3 col-6">
+                <p><b>Belanja dan Belajar</b></p>
+                <p><a href="#" class="footer-link">Mac</a></p>
+                <p><a href="#" class="footer-link">iPad</a></p>
+                <p><a href="#" class="footer-link">iPhone</a></p>
+                <p><a href="#" class="footer-link">Watch</a></p>
+                <p><a href="#" class="footer-link">iPods</a></p>
+                <p><a href="#" class="footer-link">TV & Rumah</a></p>
+                <p><a href="#" class="footer-link">Air Tag</a></p>
+                <p><b>Dompet Apple</b></p>
+                <p><a href="#" class="footer-link">Dompet</a></p>
+            </div>
+            <div class="col-sm-3 col-6">
+                <p><b>Akun</b></p>
+                <p><a href="#" class="footer-link">Kelola ID Apple Anda</a></p>
+                <p><a href="#" class="footer-link">iCloud.com</a></p>
+                <p><b>Hiburan</b></p>
+                <p><a href="#" class="footer-link">Apple One</a></p>
+                <p><a href="#" class="footer-link">Apple TV+</a></p>
+                <p><a href="#" class="footer-link">Apple Music</a></p>
+                <p><a href="#" class="footer-link">Apple Arcade</a></p>
+                <p><a href="#" class="footer-link">Apple Fitness+</a></p>
+                <p><a href="#" class="footer-link">Apple Podcasts</a></p>
+                <p><a href="#" class="footer-link">App Store</a></p>
+            </div>
+            <div class="col-sm-3 col-6">
+                <p><b>Untuk Bisnis</b></p>
+                <p><a href="#" class="footer-link">Apple dan Bisnis</a></p>
+                <p><b>Untuk Pendidikan</b></p>
+                <p><a href="#" class="footer-link">Apple dan Pendidikan</a></p>
+            </div>
+            <div class="col-sm-3 col-6">
+                <p><b>Nilai-nilai Apple</b></p>
+                <p><a href="#" class="footer-link">Aksesibilitas</a></p>
+                <p><a href="#" class="footer-link">Pendidikan</a></p>
+                <p><a href="#" class="footer-link">Lingkungan</a></p>
+                <p><a href="#" class="footer-link">Privasi</a></p>
+                <p><a href="#" class="footer-link">Tanggung Jawab Pemasok</a></p>
+                <p><b>Tentang Apple</b></p>
+                <p><a href="#" class="footer-link">Investor</a></p>
+                <p><a href="#" class="footer-link">Etika & Kepatuhan</a></p>
+                <p><a href="#" class="footer-link">Acara</a></p>
+                <p><a href="#" class="footer-link">Hubungi Apple</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <p><a href="#">Temukan retailer</a> di dekat Anda.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between flex-sm-row flex-column">
+            <p>Hak Cipta &copy; 2023 Apple Inc. Seluruh hak cipta dilindungi undang-undang.</p>
+            <p><a href="#" class="footer-link">Kebijakan</a> | <a href="#" class="footer-link">Ketentuan Penggunaan</a>
+                | <a href="#" class="footer-link">Legal</a> | <a href="#" class="footer-link">Peta Situs</a></p>
+            <p><a href="#" class="footer-link">Indonesia</a></p>
+            <p>Edited by Maszack</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
